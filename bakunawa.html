@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Character</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="photos/juat.png">
+<link rel="stylesheet" href="blog.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"} 
+body {font-family: "Open Sans"}
+
+.parallax {
+  background-image: url("photos/goldtreebg.jpg");
+  min-height: 90%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 12px solid #996515;
+}
+
+.right {
+  background-image: url("photos/brown.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:800px;
+  width: 350px;
+  border: 8px solid #333;
+  border-radius: 5px;
+  float: right;
+  margin: 50 50 0 0;
+  padding: 20 20 50 10;
+}
+
+.chapter {
+  font-size:26;
+  text-decoration: none;
+  color : #f2f2f2;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.cont {
+  font-size:20;
+  text-decoration: none;
+  color : #b3b3b3;
+  font-family: Tahoma, Geneva, sans-serif;
+  padding-left: 20px;
+}
+
+p a:hover {
+  font-size: 26;
+  text-align:center;
+}
+
+h4 a:hover {
+  font-size: 30;
+  color: #b3b3b3;
+  text-align:center;
+}
+</style>
+<body background="photos/book.jpg">
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-brown w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="https://juans-upon-a-time.github.io/" class="w3-bar-item w3-button">HOME</a>
+      <a href="game.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GAME</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
+      <a href="coordinators.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> COORDINATORS</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-brown w3-hide w3-hide-large w3-hide-medium">
+      <a href="game.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GAME</a>
+      <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="coordinators.html" class="w3-bar-item w3-button" onclick="toggleFunction()">COORDINATORS</a>
+    </div>
+  </div>
+
+  <script>
+
+    var _0xfb75=["\x6F\x6E\x73\x63\x72\x6F\x6C\x6C","\x6D\x79\x4E\x61\x76\x62\x61\x72","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x73\x63\x72\x6F\x6C\x6C\x54\x6F\x70","\x62\x6F\x64\x79","\x64\x6F\x63\x75\x6D\x65\x6E\x74\x45\x6C\x65\x6D\x65\x6E\x74","\x63\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x77\x33\x2D\x62\x61\x72","\x20\x77\x33\x2D\x63\x61\x72\x64","\x20\x77\x33\x2D\x61\x6E\x69\x6D\x61\x74\x65\x2D\x74\x6F\x70","\x20\x77\x33\x2D\x77\x68\x69\x74\x65","\x20\x77\x33\x2D\x63\x61\x72\x64\x20\x77\x33\x2D\x61\x6E\x69\x6D\x61\x74\x65\x2D\x74\x6F\x70\x20\x77\x33\x2D\x77\x68\x69\x74\x65","","\x72\x65\x70\x6C\x61\x63\x65","\x6E\x61\x76\x44\x65\x6D\x6F","\x77\x33\x2D\x73\x68\x6F\x77","\x69\x6E\x64\x65\x78\x4F\x66","\x20\x77\x33\x2D\x73\x68\x6F\x77"];window[_0xfb75[0]]= function(){myFunction()};function myFunction(){var _0x8a9bx2=document[_0xfb75[2]](_0xfb75[1]);if(document[_0xfb75[4]][_0xfb75[3]]> 100|| document[_0xfb75[5]][_0xfb75[3]]> 100){_0x8a9bx2[_0xfb75[6]]= _0xfb75[7]+ _0xfb75[8]+ _0xfb75[9]+ _0xfb75[10]}else {_0x8a9bx2[_0xfb75[6]]= _0x8a9bx2[_0xfb75[6]][_0xfb75[13]](_0xfb75[11],_0xfb75[12])}}function toggleFunction(){var _0x8a9bx4=document[_0xfb75[2]](_0xfb75[14]);if(_0x8a9bx4[_0xfb75[6]][_0xfb75[16]](_0xfb75[15])==  -1){_0x8a9bx4[_0xfb75[6]]+= _0xfb75[17]}else {_0x8a9bx4[_0xfb75[6]]= _0x8a9bx4[_0xfb75[6]][_0xfb75[13]](_0xfb75[17],_0xfb75[12])}}
+
+  </script>
+
+  <div class="parallax">
+    <center><img class="w3-image" src="photos/juat.png"></center>
+  </div>
+
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding">
+
+    <div class="w3-col l8 s12">
+
+      <!-- Start Blog Content -->
+
+      <div class="w3-content" style="max-width:1600px">
+
+       <div class="w3-container w3-brown w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3><strong>Bakunawa (Mythical Creature)</strong></h3>
+          <p>A monstrous dragon who would rise from the ocean and swallow the moons whole. He is a greedy monster who would do anything to gain power and rule over the other gods.</p>
+        </div>
+
+        </div>
+        <hr>
+
+      </div>
+
+    </div>
+
+    <div class="w3-col l4">
+
+     <div class="right">
+
+      <h1 style="color:white; margin-top:6px; text-align:center; margin-left:9px; font-size:38px; font-family:Georgia, serif;">Juan's Upon A Time</h1>
+
+      <br>
+      <br>
+      <br>
+      <center>
+        <h4><a class="chapter">Prologue</a></h4>
+        <p><a href="gametrailer.html" class="cont">Game Trailer</a></p>
+        <p><a href="gamemap.html" class="cont">Game Map</a></p>
+        <p><a href="gamescenes.html" class="cont">Game Chapters</a></p>
+
+        <h4><a class="chapter">Characters</a><br/></h4>
+        <p><a href="juan.html" class="cont">Juan</a><br/></p>
+        <p><a href="andreas.html" class="cont">Andreas</a><br/></p>
+        <p><a href="magellan.html" class="cont">Magellan</a><br/></p>
+        <p><a href="rajahumabon.html" class="cont">Raja Humabon</a><br/></p>
+        <p><a href="lapulapu.html" class="cont">Lapu-Lapu</a><br/></p>
+        <p><a href="bakunawa.html" class="cont">Bakunawa</a><br/><br/></p>
+        </center>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-black" style="padding:32px">
+    <p>&copy Copyrights and trademarks for the sources, and other promotional materials are held by 
+    their respective owners and their use is allowed under the fair use clause of the Copyright Law (2018).</p>
+  </footer>
+
+
+</body>
+</html> 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>Juan's Upon A Time</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="photos/juat.png">
+<link rel="stylesheet" href="blog.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"} 
+body {font-family: "Open Sans"}
+
+.parallax {
+      background-image: url("photos/mountainbg.png");
+      min-height: 90%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-bottom: 12px solid #996515;
+  }
+
+.multi {
+  padding-top: 8%;
+  font-size: 150%;
+  color: black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-indent: 50px;
+  padding-left: 100px;
+
+}
+
+.stats {
+  min-height: 80%;
+  background-image: url("photos/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 12px solid #996515;
+  padding: 70px;
+  padding-left: 100px;
+  padding-right: 200px;
+  position: relative;
+}
+
+</style>
+<body class="w3-white"> 
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-brown w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://juans-upon-a-time.github.io/" class="w3-bar-item w3-button">HOME</a>
+    <a href="game.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GAME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
+    <a href="coordinators.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> COORDINATORS</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-brown w3-hide w3-hide-large w3-hide-medium">
+    <a href="game.html" class="w3-bar-item w3-button" onclick="toggleFunction()">GAME</a>
+    <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="coordinators.html" class="w3-bar-item w3-button" onclick="toggleFunction()">COORDINATORS</a>
+  </div>
+</div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+</script>
+
+<div class="parallax">
+<center><img class="w3-image" src="photos/juat.png"></center>
+</div>
+
+
+</div>
+
+<div class="w3-display-container bgimg2">
+  <img src="photos/goldtreebg.jpg" width="1400" height="700">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Juan's Upon A Time</span><br><br>
+    <h3>Juan has a mission to come back to the present after an unnatural encounter
+      with the Last Philippine Eagle existing in the country. With his will power to return
+      to his normal life, he meets up with the National Heroes of the country to find the relics
+    he needs to travel back to the present</h3>
+  </div>
+</div>
+
+<div class="stats">
+<center><img class="w3-image" src="photos/LocalITy.png" style="width:450;height:450;"></center>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-black" style="padding:32px">
+  <a href="#" class="w3-button w3-brown w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>&copy Copyrights and trademarks for the sources, and other promotional materials are held by 
+their respective owners and their use is allowed under the fair use clause of the Copyright Law (2018).</p>
+</footer>
+
+</body>
+</html> 
